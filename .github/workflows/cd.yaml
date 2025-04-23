@@ -30,7 +30,7 @@ jobs:
                     tags: lucasdias/devops-ci:latest
                 
                 - name: Azure WebApp
-                  uses: Azure/webapps-deplo@v3.0.1
+                  uses: Azure/webapps-deploy@v3.0.1
                   with:
                     app-name: lucasdiass-devops-ci
                     publish-profile: ${{secrets.PUBLISH_PROFILE}}
