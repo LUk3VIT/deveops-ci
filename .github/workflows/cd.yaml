@@ -27,11 +27,11 @@ jobs:
                 context: .
                 file: ./Dockerfile
                 push: true
-                tags: lucasdias/devops-ci:latest
+                tags: lucasdias061/devops-ci:latest
 
             - name: Azure WebApp
               uses: Azure/webapps-deploy@v3.0.1
               with:
                 app-name: lucasdiass-devops-ci
                 publish-profile: ${{secrets.PUBLISH_PROFILE}}
-                image: lucasdias/devops-ci:latest
+                image: lucasdias061/devops-ci:latest
